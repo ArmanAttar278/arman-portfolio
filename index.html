@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arman Attar - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .skill-card img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 8px;
+      transition: transform 0.3s ease;
+    }
+    .skill-card:hover img {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+<!-- Navbar -->
+<header class="bg-white shadow fixed w-full z-50">
+  <nav class="container mx-auto flex justify-between items-center p-4">
+    <h1 class="text-2xl font-bold">Arman Attar</h1>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#about" class="hover:text-blue-600">About</a></li>
+      <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+      <li><a href="#experience" class="hover:text-blue-600">Experience</a></li>
+      <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="h-screen flex flex-col justify-center items-center text-center px-4" id="home">
+  <h2 class="text-4xl md:text-5xl font-bold" id="typed"></h2>
+  <p class="mt-4 text-lg text-gray-600">SDET | Automation Specialist | Databricks & CI/CD Expert</p>
+  <a href="Arman_Attar_CV.pdf" download class="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Download Resume</a>
+</section>
+
+<!-- About Me -->
+<section id="about" class="container mx-auto py-16 px-4" data-aos="fade-up">
+  <h3 class="text-3xl font-bold mb-6"><i class="fas fa-user text-blue-600 mr-2"></i>About Me</h3>
+  <p class="text-lg leading-relaxed">
+    Experienced SDET Engineer with 3.5 years in Banking, Ecommerce, and Retail domains. 
+    I specialize in designing and executing complex test cases, building automation frameworks, and optimizing QA processes 
+    to reduce operational costs and improve system stability.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-gray-100 py-16 px-4" data-aos="fade-right">
+  <div class="container mx-auto">
+    <h3 class="text-3xl font-bold mb-6"><i class="fas fa-tools text-green-600 mr-2"></i>Skills</h3>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        Python
+      </div>
+      <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        Java
+      </div>
+      <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition flex flex-col items-center">
+        <img src="https://www.svgrepo.com/show/354321/selenium.svg" alt="Selenium">
+        Selenium
+      </div>
+      <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition flex flex-col items-center">
+        <img src="https://jmeter.apache.org/images/jmeter.png" alt="JMeter">
+        JMeter
+      </div>
+      <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition flex flex-col items-center">
+        <img src="databricks.png" alt="Databricks">
+        Databricks
+      </div>
+      <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+        Azure
+      </div>
+      <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab">
+        GitLab CI/CD
+      </div>
+      <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+        Docker
+      </div>
+      <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+        PostgreSQL
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="container mx-auto py-16 px-4" data-aos="fade-left">
+  <h3 class="text-3xl font-bold mb-6"><i class="fas fa-briefcase text-purple-600 mr-2"></i>Experience</h3>
+  <div class="space-y-6">
+    <div class="bg-white p-6 rounded shadow">
+      <h4 class="font-bold flex items-center">
+  	<img src="UBS_Logo.png" alt="UBS Logo" class="w-8 h-8 mr-2">
+  	Tech Quality & Test Engineer – UBS Business Solutions	</h4>
+      <span class="text-gray-500 text-sm">May 2024 – Present</span>
+      <ul class="list-disc list-inside mt-2 text-gray-700">
+        <li>Built modular Python + Pytest framework for Databricks & DB validation</li>
+        <li>Integrated Allure reporting & Excel-based test data</li>
+        <li>Created UI automation framework reducing manual effort by 50%</li>
+      </ul>
+    </div>
+    <div class="bg-white p-6 rounded shadow">
+      <h4 class="font-bold flex items-center">
+  	<img src="infosys_logo.png" alt="Infosys Logo" class="w-8 h-8 mr-2">
+  	Test Engineer (SDET) – Infosys Ltd</h4>
+      <span class="text-gray-500 text-sm">Sep 2021 – May 2024</span>
+      <ul class="list-disc list-inside mt-2 text-gray-700">
+        <li>Developed UI & API automation frameworks in Java</li>
+        <li>Reduced testing time from 1 week to 1 day using CI/CD</li>
+        <li>Created JMeter performance test packs for APIs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="bg-gray-100 py-16 px-4" data-aos="zoom-in">
+  <div class="container mx-auto">
+    <h3 class="text-3xl font-bold mb-6"><i class="fas fa-folder-open text-orange-600 mr-2"></i>Projects</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h4 class="font-bold">Databricks Data Validation Framework</h4>
+        <p class="mt-2 text-gray-600">Python + Pytest + Allure for Delta Lake & PostgreSQL validation.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h4 class="font-bold">UI Automation for Banking Application</h4>
+        <p class="mt-2 text-gray-600">Selenium + Cucumber + BDD with GitLab CI/CD.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container mx-auto py-16 px-4" data-aos="fade-up">
+  <h3 class="text-3xl font-bold mb-6"><i class="fas fa-envelope text-red-600 mr-2"></i>Contact</h3>
+  <p><i class="fas fa-envelope mr-2 text-red-500"></i>Email: <a href="mailto:armanattar278@gmail.com" class="text-blue-600">armanattar278@gmail.com</a></p>
+  <p><i class="fas fa-phone mr-2 text-green-500"></i>Phone: <a href="tel:+919284006100" class="text-blue-600">+91 9284006100</a></p>
+  <p><i class="fab fa-linkedin mr-2 text-blue-500"></i>LinkedIn: <a href="https://www.linkedin.com/in/arman-attar-2847a61b5" target="_blank" class="text-blue-600">Arman Attar</a></p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-4">
+  <p>&copy; 2025 Arman Attar. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+  new Typed('#typed', {
+    strings: ["Hi, I'm Arman Attar", "A Test Engineer (SDET)", "Automation & CI/CD Specialist"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+</body>
+</html>
